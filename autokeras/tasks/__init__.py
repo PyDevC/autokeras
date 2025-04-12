@@ -12,7 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from autokeras.tasks.image import ImageClassifier
-from autokeras.tasks.image import ImageRegressor
-from autokeras.tasks.text import TextClassifier
-from autokeras.tasks.text import TextRegressor
+from autokeras.tasks.image import ImageClassifier, ImageRegressor
+from autokeras.tasks.text import TextClassifier, TextRegressor

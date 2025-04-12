@@ -15,41 +15,56 @@
 import keras_nlp
 
 from autokeras.auto_model import AutoModel
-from autokeras.blocks import BertBlock
-from autokeras.blocks import ClassificationHead
-from autokeras.blocks import ConvBlock
-from autokeras.blocks import DenseBlock
-from autokeras.blocks import EfficientNetBlock
-from autokeras.blocks import Flatten
-from autokeras.blocks import ImageAugmentation
-from autokeras.blocks import ImageBlock
-from autokeras.blocks import Merge
-from autokeras.blocks import Normalization
-from autokeras.blocks import RegressionHead
-from autokeras.blocks import ResNetBlock
-from autokeras.blocks import RNNBlock
-from autokeras.blocks import SpatialReduction
-from autokeras.blocks import TemporalReduction
-from autokeras.blocks import TextBlock
-from autokeras.blocks import XceptionBlock
+
+from autokeras.blocks import (
+    BertBlock,
+    ClassificationHead,
+    ConvBlock,
+    DenseBlock,
+    EfficientNetBlock,
+    Flatten,
+    ImageAugmentation,
+    ImageBlock,
+    Merge,
+    Normalization,
+    RegressionHead,
+    ResNetBlock,
+    RNNBlock,
+    SpatialReduction,
+    TemporalReduction,
+    TextBlock,
+    XceptionBlock,
+)
+
 from autokeras.engine.block import Block
 from autokeras.engine.head import Head
 from autokeras.engine.node import Node
-from autokeras.keras_layers import CastToFloat32
-from autokeras.keras_layers import ExpandLastDim
-from autokeras.nodes import ImageInput
-from autokeras.nodes import Input
-from autokeras.nodes import TextInput
-from autokeras.tasks import ImageClassifier
-from autokeras.tasks import ImageRegressor
-from autokeras.tasks import TextClassifier
-from autokeras.tasks import TextRegressor
-from autokeras.tuners import BayesianOptimization
-from autokeras.tuners import Greedy
-from autokeras.tuners import Hyperband
-from autokeras.tuners import RandomSearch
-from autokeras.utils.io_utils import image_dataset_from_directory
-from autokeras.utils.io_utils import text_dataset_from_directory
+from autokeras.keras_layers import CastToFloat32, ExpandLastDim
+
+from autokeras.nodes import (
+    ImageInput,
+    Input,
+    TextInput,
+)
+
+from autokeras.tasks import (
+    ImageClassifier,
+    ImageRegressor,
+    TextClassifier,
+    TextRegressor,
+)
+
+from autokeras.tuners import (
+    BayesianOptimization,
+    Greedy,
+    Hyperband,
+    RandomSearch,
+)
+
+from autokeras.utils.io_utils import (
+    image_dataset_from_directory,
+    text_dataset_from_directory,
+)
 
 __version__ = "2.1.0dev"
 

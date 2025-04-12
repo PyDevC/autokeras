@@ -15,24 +15,33 @@
 import keras
 import tensorflow as tf
 
-from autokeras.blocks.basic import BertBlock
-from autokeras.blocks.basic import ConvBlock
-from autokeras.blocks.basic import DenseBlock
-from autokeras.blocks.basic import EfficientNetBlock
-from autokeras.blocks.basic import ResNetBlock
-from autokeras.blocks.basic import RNNBlock
-from autokeras.blocks.basic import XceptionBlock
-from autokeras.blocks.heads import ClassificationHead
-from autokeras.blocks.heads import RegressionHead
-from autokeras.blocks.preprocessing import ImageAugmentation
-from autokeras.blocks.preprocessing import Normalization
-from autokeras.blocks.reduction import Flatten
-from autokeras.blocks.reduction import Merge
-from autokeras.blocks.reduction import SpatialReduction
-from autokeras.blocks.reduction import TemporalReduction
-from autokeras.blocks.wrapper import GeneralBlock
-from autokeras.blocks.wrapper import ImageBlock
-from autokeras.blocks.wrapper import TextBlock
+from autokeras.blocks.basic import (
+    BertBlock,
+    ConvBlock,
+    DenseBlock,
+    EfficientNetBlock,
+    ResNetBlock,
+    RNNBlock,
+    XceptionBlock,
+)
+
+from autokeras.blocks.heads import ClassificationHead, RegressionHead
+
+from autokeras.blocks.preprocessing import ImageAugmentation, Normalization
+
+from autokeras.blocks.reduction import (
+    Flatten,
+    Merge,
+    SpatialReduction,
+    TemporalReduction,
+)
+
+from autokeras.blocks.wrapper import (
+    GeneralBlock,
+    ImageBlock,
+    TextBlock,
+)
+
 from autokeras.utils import utils
 
 

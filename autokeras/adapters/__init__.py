@@ -12,8 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from autokeras.adapters.input_adapters import ImageAdapter
-from autokeras.adapters.input_adapters import InputAdapter
-from autokeras.adapters.input_adapters import TextAdapter
-from autokeras.adapters.output_adapters import ClassificationAdapter
-from autokeras.adapters.output_adapters import RegressionAdapter
+from autokeras.adapters.input_adapters import (
+    ImageAdapter,
+    InputAdapter,
+    TextAdapter,
+)
+
+from autokeras.adapters.output_adapters import (
+    ClassificationAdapter,
+    RegressionAdapter,
+)
